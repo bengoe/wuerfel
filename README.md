@@ -7,4 +7,4 @@ Das hier ist eine einfache Würfelsimulation, wo man eingeben kann wie oft ein W
 Das Skript wurde in PHP geschrieben, das Design ist von Bootstrap (Bootstrap Studio)
 
 ## Wie kann man das ausprobieren?
-Hier: https://bengoe.github.io/wuerfel
+Einfach runterladen und auf dem eigenen Webserver probieren
