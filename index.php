@@ -59,7 +59,6 @@ function wuerfeln($rng){
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Start</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="https://bengoe.eu/imprint.php">Impressum</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="https://github.com/bengoe/wuerfel">GitHub (Quellcode)</a></li>
                 </ul>
             </div>
