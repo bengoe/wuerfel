@@ -6,12 +6,13 @@ $drei = 0;
 $vier = 0;
 $fuenf = 0;
 $sechs = 0;
-wuerfeln($_POST['wieoft']);
+if(isset($_POST['wieoft'])){
+    wuerfeln($_POST['wieoft']);
+}
 function wuerfeln($rng){
     $rngn = $rng-1;
     $i=0;
     while ($i <= $rngn){
-        $ehm = 333;
         global $eins, $zwei, $drei, $vier, $fuenf, $sechs;
         $augen = random_int(1, 6);
         if ($augen == 1){
