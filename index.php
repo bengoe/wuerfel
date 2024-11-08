@@ -15,22 +15,23 @@ function wuerfeln($rng){
     while ($i <= $rngn){
         global $eins, $zwei, $drei, $vier, $fuenf, $sechs;
         $augen = random_int(1, 6);
-        if ($augen == 1){
+        switch ($augen) {
+          case 1:
             $eins++;
-        }
-        if ($augen == 2){
+            break;
+          case 2:
             $zwei++;
-        }
-        if ($augen == 3){
+            break;
+          case 3:
             $drei++;
-        }
-        if ($augen == 4){
+            break;
+          case 4:
             $vier++;
-        }
-        if ($augen == 5){
+            break;
+          case 5:
             $fuenf++;
-        }
-        if ($augen == 6){
+            break;
+          default:
             $sechs++;
         }
     $i++;
