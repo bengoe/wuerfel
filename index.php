@@ -1,38 +1,62 @@
 <?php
 
+// Declaring variables
 $eins = 0;
 $zwei = 0;
 $drei = 0;
 $vier = 0;
 $fuenf = 0;
 $sechs = 0;
+
+// ???
 if(isset($_POST['wieoft'])){
     wuerfeln($_POST['wieoft']);
 }
-function wuerfeln($rng){
-    $rngn = $rng-1;
-    $i=0;
-    while ($i <= $rngn){
+
+// Function which emulate the dices
+function wuerfeln($amount){
+    $amount = $amount-1;
+    $i = 0;
+    while ($i <= $amount){
+
         global $eins, $zwei, $drei, $vier, $fuenf, $sechs;
+
         $augen = random_int(1, 6);
         switch ($augen) {
-          case 1:
+          case 1:{
             $eins++;
             break;
-          case 2:
+          } 
+
+          case 2:{
             $zwei++;
             break;
-          case 3:
+          }
+          
+          case 3:{
             $drei++;
             break;
-          case 4:
+          }
+            
+          case 4:{
             $vier++;
             break;
-          case 5:
+          }
+            
+          case 5:{
             $fuenf++;
             break;
-          default:
+          }
+
+          case 6:{
             $sechs++;
+            break;
+          }
+            
+          default:{
+            throw new RuntimeException("Value is out of range (blame ben)");
+          }
+            
         }
     $i++;
     }
